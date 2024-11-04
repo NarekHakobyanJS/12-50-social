@@ -1,0 +1,10 @@
+.users-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.active {
+    background-color: aqua;
+}
