@@ -6,7 +6,8 @@ const initState = {
     id : null,
     email : null,
     login : null,
-    userId : null
+    userId : null,
+    isAuth : false
 }
 
 const authReducer = (state = initState, action) => {
@@ -21,7 +22,8 @@ const authReducer = (state = initState, action) => {
             case AUTH_LOGIN : {
                 return {
                     ...state,
-                    userId : action.payload.userId
+                    userId : action.payload.userId,
+                    isAuth : true
                 }
             }
         default:
